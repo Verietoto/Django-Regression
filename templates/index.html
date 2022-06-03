@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'test.css' %}", type="text/css">
+    <title>Homepage</title>
+</head>
+
+<body>
+    <div class="Judul"> 
+        <h1> Sentiment and Regression Features</h1>
+    </div>
+
+    <h1 class="sub_judul1"> Regression </h1>
+
+    <div class="regression_container">
+        <div id="persamaan_regresi">
+            <h2> Masukakn Nilai X dan Y</h2>
+            <form method="POST">
+                {% csrf_token %}
+                {{ form }}
+                <button type="submit">Submit</button>
+                <button> <a href="delete"> Clear </a></button>
+            </form>
+    
+            <table>
+                <tr>
+                    <th>Nilai X</th>
+                    <th>Nilai Y</th>
+                </tr>
+            {% for db in regression %}
+                <tr>
+                    <td>{{db.x_val}}</td>
+                    <td>{{db.y_val}}</td>
+
+                </tr>
+            {% endfor %}
+    
+            </table>
+        
+        </div>
+        <div id="visualisasi_regresi">
+            <h2>Plot</h2>
+            <img src="./static/gambar.png" alt="gambar">
+        </div>
+    </div>
+</body>
+</html>

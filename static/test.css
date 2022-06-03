@@ -1,0 +1,84 @@
+body {
+    background-color: rgb(93, 148, 148);
+}
+.judul {
+    display: flex;
+
+}
+.Judul h1 {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(21, 37, 133);
+}
+
+.sub_judul1 {
+    /* display: flex; */
+    text-align: center;
+    background-color: rgb(50, 141, 50);
+    border-radius: 20px;
+    margin: 0px 35vw;
+    padding: 10px 0
+}
+
+.regression_container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border: 100px;
+    background-color: rgb(165, 146, 146);
+    border-color: red;
+    margin-top: 30px;
+    width: 80vw;
+    height: 50vh;
+}
+
+#persamaan_regresi {
+    width: 60%;
+    flex-direction: column;
+    /* display: flex; */
+
+    /* background-color: red; */
+}
+
+#visualisasi_regresi {
+    /* background-color: yellow; */
+    width: 40%;
+}
+
+#visualisasi_regresi h2{
+    justify-content: center;
+    text-align: center;
+}
+
+#visualisasi_regresi img {
+    object-fit: cover;
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#persamaan_regresi h2 {
+    text-justify: center;
+    text-align: center;
+    
+    margin-left: auto;
+    color: rgb(63, 45, 45);
+}
+
+#persamaan_regresi form {
+    text-align: center;
+    display: block;
+}
+
+table, th, td {
+    border: 2px solid;
+    font-size: 20px;
+    text-justify: center;
+    text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
